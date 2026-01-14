@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Form's Input</title>
+</head>
+<body>
+    <h1>Form's Input</h1>
+    <form>
+        <label for="birthday">1. Your birthdate: </label>
+        <input type="date" id="birthday" required max="2004-12-31">
+        <br>
+
+        <label for="color">2. Select your favorite color: </label>
+        <input type="color" id="color">
+        <br>
+
+        <label for="drivingTime">3. Approximate driving time to campus: </label>
+        <input type="number" id="drivingTime" name="drivingTime" min="10" max="50" step="10">
+        <br>
+        
+        <label for="reaching">4. Your website: </label>
+        <br>
+        <input type="radio" id="reaching" name="reaching" value="car" checked>I drive my car
+        <br>
+        <input type="radio" id="reaching" name="reaching" value="bus">Someone is bringing me to campus
+        <br>
+        <input type="radio" id="reaching" name="reaching" value="walk">I am staying in the accommodation
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <style>
+    * {
+      /* You can leave this as it is*/
+      box-sizing: border-box;
+    }
+
+    body {
+      /* You can leave this as it is*/
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #87CEEB;
+    }
+
+    header {
+      /* You can leave this as it is*/
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    footer {
+      /* You can leave this as it is*/
+      text-align: center;
+      margin-top: 40px;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    /* TODO: Add your CSS here. */
+    .today {
+      display: block;
+      margin: auto;
+      width: 550px;
+      height: 250px;
+      border-radius: 10px;
+      justify-content: center;
+      background-color: #a1ddf5;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-weight: bold;
+    }
+    .today:hover{
+      background-color: #b6eaff;
+    }
+
+    .todayinfo {
+      display: block;
+      padding-top: 15px;
+    }
+
+    span.todaytemp {
+      display: block;
+      font-size: 24px;
+      margin-top: 10px;
+      padding-bottom: 5px;
+    }
+    span.high, span.low {
+      font-weight: normal;
+    }
+
+    .icon img {
+      display: block;
+      margin: 10px auto;
+    }
+
+    .dayscontainer {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px auto;
+      width: 600px;
+    }
+    .days {
+      display: block;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 10px;
+      width: 100px;
+      height: 140px;
+      text-align: center;
+      background-color: #a1ddf5;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .days:hover{
+      background-color: #b6eaff;
+    }
+
+    .days img {
+      display: block;
+      margin: auto;
+    }
+
+
+    /* TODO: Add Mobile adjustments here. */
+    @media (max-width: 600px) {
+      .today, .dayscontainer{
+        display: block;
+        width: 90%;
+      }
+      .days{
+        margin: 10px auto;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Local Weather</h1>
+  </header>
+  <main>
+    <div class="today">
+      <div class="todayinfo">
+        <span class="todaytemp">24°</span>
+        <div>
+          <span class="high">H: 26°</span>
+          <span class="low">L: 18°</span>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="https://placehold.co/100x100" alt="Sunny weather icon">
+        <p>Sunny</p>
+      </div>
+    </div>
+    <div class="dayscontainer">
+      <div class="days">
+        <h3>Mon</h3>
+        <img src="https://placehold.co/50x50" alt="Sunny weather icon">
+        <p>24°</p>
+      </div>
+      <div class="days">
+        <h3>Tue</h3>
+        <img src="https://placehold.co/50x50" alt="Partly cloudy weather icon">
+        <p>22°</p>
+      </div>
+      <div class="days">
+        <h3>Wed</h3>
+        <img src="https://placehold.co/50x50" alt="Cloudy weather icon">
+        <p>20°</p>
+      </div>
+      <div class="days">
+        <h3>Thu</h3>
+        <img src="https://placehold.co/50x50" alt="Rainy weather icon">
+        <p>19°</p>
+      </div>
+      <div class="days">
+        <h3>Fri</h3>
+        <img src="https://placehold.co/50x50" alt="Sunny weather icon">
+        <p>23°</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Weather data provided by WeatherService</p>
+  </footer>
+</body>
+
+</html>

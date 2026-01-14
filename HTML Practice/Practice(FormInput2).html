@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form>
+        <label>
+            1. Your phone (should be 11 digits as following pattern):
+            <input type="tel" name="phone" placeholder="968-00-000000" pattern="968-\d{2}-\d{6}" required oninvalid="alert('Please match the requested format: 3 digits - 2 digits - 6 digits.');">
+        </label>
+        <br>
+        <label>
+            2. Your email:
+            <input type="email" name="email" required oninvalid="alert('Please enter a email address.');">
+        </label>
+        <br>
+        <label>
+            3. Indicate on the range bar your satisfaction level from 0-100:
+            <input type="range" name="range" min="1" max="100" value="50" id="rangeInput">
+            <span class="range-value" id="rangeValue" style="color: red;">50</span>
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

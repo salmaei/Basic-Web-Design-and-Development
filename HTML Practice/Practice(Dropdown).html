@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML Form practice</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>About colors</legend>
+            <p>Pick at least 2 colors (press CTL to select the second color)</p>
+            <select id="colors">
+                <option>Blue</option>
+                <option>Green</option>
+                <option>Black</option>
+                <option>Pink</option>
+            </select>
+        </fieldset>
+    </form>
+        <br>
+    <form>
+        <fieldset autocomplete="on">
+            <legend>About food</legend>
+            <p>Type your favorite meal. Whenever you type a character/string, you will see a drop-down list of pre-defined options that contain that string</p>
+            <input list="food">
+            <datalist id="food">
+                <option>Pizza</option>
+                <option>Pasta</option>
+                <option>Grill</option>
+                <option>Falafel</option>
+                <option>Soup</option>
+            </datalist>
+        </fieldset>
+    </form>
+    <br>
+    <input type="submit" value="Send">
+
+</body>
+></html>
