@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {
+  border: 1px solid black;
+  padding: 5px;
+}
+table {
+  border-collapse: collapse;
+  width: 66.6%;
+  margin: 0 10px 20px;
+  margin-bottom: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left; 
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+
+.container {
+  display: grid;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.services, .commitment {
+  margin: auto;
+  text-align: center;
+}
+.cc {
+  display: flex;
+  width: 100%;
+}
+#content {
+  text-align: center;
+  background-color: blue;
+  margin: 0 0 auto;
+  color: white;
+  width: 16.6%;
+}
+.container2 {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  li {
+    float: none
+    }
+  .container {
+    display: block;
+    }
+  .container2 {
+    display: block;
+    }
+  .cc {
+    display: block;
+    padding-bottom: 15px;
+  }
+  #content{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    width: auto;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></lia></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<div class="container">
+  <div class="cc">
+    <div class="services">
+        <h1>Our services</h1>
+        <p>We offer a variety of services to all types of customer.</p>
+    </div>
+    <div class="commitment">
+        <h1>Our commitment</h1>
+        <p>Each single customer is important for us. </p>
+    </div>
+  </div>
+    
+  <div class="container2">
+    <p id="content"> Content <p>
+      <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+    <p id="content"> Content </p>
+  </div>
+</div>
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
